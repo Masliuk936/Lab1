@@ -22,5 +22,14 @@ int main()
     std::cout << "\nКількість ітерацій: " << iterB;
     std::cout << "\nНорма нев'язки: " << errorB << "\n\n";
 
+    std::cout << "--- Алгоритм Студента А (Метод Гауса) ---\n";
+    auto resultA = calculateA(data);
+    auto [valueA, iterA, errorA] = *resultA;
+
+    std::cout << "Вектор розв'язків: ";
+    for (double val : valueA) std::cout << val << " ";
+    std::cout << "\nКількість операцій: " << iterA;
+    std::cout << "\nНорма нев'язки: " << errorA << "\n\n";
+
     return 0;
 }
