@@ -23,7 +23,6 @@ int main()
     std::cout << "\nКількість операцій: " << iterA;
     std::cout << "\nНорма нев'язки: " << errorA << "\n\n";
 
-
     std::cout << "--- Алгоритм Студента Б (Метод простих ітерацій) ---\n";
     auto resultB = calculateB(data);
     auto [valueB, iterB, errorB] = *resultB;
